@@ -3,6 +3,7 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: mvn install -DskipTests=false
+  - before: npm install -g @vscode/dev-container-cli
+    init: mvn install -DskipTests=false
 
 
